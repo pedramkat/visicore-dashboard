@@ -20,37 +20,40 @@ export default function Login() {
   }
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', alignItems: 'center', justifyContent: 'center', background: '#0f172a' }}>
-      <div style={{ background: '#111827', padding: '32px', borderRadius: 12, width: 360, color: 'white', boxShadow: '0 10px 30px rgba(0,0,0,0.4)' }}>
-        <h1 style={{ fontSize: 24, marginBottom: 16 }}>Visicore – Doctor Login</h1>
-        <p style={{ fontSize: 14, color: '#9ca3af', marginBottom: 24 }}>Sign in to access your dashboard 21</p>
-        <form onSubmit={onSubmit}>
-          <label style={{ display: 'block', fontSize: 12, color: '#d1d5db', marginBottom: 6 }}>Email</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="doctor@example.com"
-            required
-            style={{
-              width: '100%', padding: '10px 12px', borderRadius: 8, border: '1px solid #374151', background: '#0b1220', color: 'white', marginBottom: 14,
-            }}
-          />
-          <label style={{ display: 'block', fontSize: 12, color: '#d1d5db', marginBottom: 6 }}>Password</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="••••••••"
-            required
-            style={{
-              width: '100%', padding: '10px 12px', borderRadius: 8, border: '1px solid #374151', background: '#0b1220', color: 'white', marginBottom: 20,
-            }}
-          />
+    <div className="min-h-screen bg-surface flex items-center justify-center">
+      <div className="w-full max-w-sm bg-panel text-white rounded-xl shadow-xl border border-slate-800 p-8">
+        <h1 className="text-2xl font-semibold mb-2">Visicore – Doctor Login</h1>
+        <p className="text-sm text-slate-400 mb-6">Sign in to access your dashboard</p>
+        <form onSubmit={onSubmit} className="space-y-4">
+          <div>
+            <label className="block text-xs text-slate-300 mb-1">Email</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="doctor@example.com"
+              required
+              className="w-full rounded-lg border border-slate-700 bg-slate-900 text-white placeholder-slate-400 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
+            />
+          </div>
+          <div>
+            <label className="block text-xs text-slate-300 mb-1">Password</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="••••••••"
+              required
+              className="w-full rounded-lg border border-slate-700 bg-slate-900 text-white placeholder-slate-400 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
+            />
+          </div>
           {error && (
-            <p style={{ color: '#f87171', fontSize: 12, marginBottom: 12 }}>{error}</p>
+            <p className="text-red-400 text-xs">{error}</p>
           )}
-          <button type="submit" style={{ width: '100%', padding: '10px 12px', borderRadius: 8, background: '#2563eb', color: 'white', border: 'none', cursor: 'pointer' }}>
+          <button
+            type="submit"
+            className="w-full rounded-lg bg-brand hover:bg-brand-dark text-white px-3 py-2 font-medium transition"
+          >
             Sign in
           </button>
         </form>
