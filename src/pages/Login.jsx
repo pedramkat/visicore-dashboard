@@ -20,35 +20,40 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen bg-surface flex items-center justify-center">
-      <div className="w-full max-w-sm bg-panel text-white rounded-xl shadow-xl border border-slate-800 p-8">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center space-y-6">
+      <img
+        src="/images/visicore-full.png"
+        alt="Visicore logo"
+        className="w-44 h-44 mx-auto"
+      />
+      <div className="w-full max-w-sm bg-gradient-to-br from-indigo-100 to-blue-100 text-slate-900 rounded-xl shadow-xl border border-slate-200 p-8">
         <h1 className="text-2xl font-semibold mb-2">Visicore – Doctor Login</h1>
-        <p className="text-sm text-slate-400 mb-6">Sign in to access your dashboard</p>
+        <p className="text-sm text-slate-600 mb-6">Sign in to access your dashboard</p>
         <form onSubmit={onSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs text-slate-300 mb-1">Email</label>
+            <label className="block text-xs text-slate-600 mb-1">Email</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="doctor@example.com"
               required
-              className="w-full rounded-lg border border-slate-700 bg-slate-900 text-white placeholder-slate-400 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
+              className="w-full rounded-lg border border-slate-300 bg-white text-slate-900 placeholder-slate-500 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
             />
           </div>
           <div>
-            <label className="block text-xs text-slate-300 mb-1">Password</label>
+            <label className="block text-xs text-slate-600 mb-1">Password</label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
               required
-              className="w-full rounded-lg border border-slate-700 bg-slate-900 text-white placeholder-slate-400 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
+              className="w-full rounded-lg border border-slate-300 bg-white text-slate-900 placeholder-slate-500 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
             />
           </div>
           {error && (
-            <p className="text-red-400 text-xs">{error}</p>
+            <p className="text-red-600 text-xs">{error}</p>
           )}
           <button
             type="submit"

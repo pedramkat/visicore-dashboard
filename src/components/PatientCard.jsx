@@ -2,14 +2,14 @@ import React from 'react'
 
 export default function PatientCard({ patient }) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-white shadow-sm p-4 flex gap-4">
+    <div className="rounded-xl border border-slate-200 bg-white shadow-sm p-4 flex gap-4 min-h-[9rem]">
       <img
         src={patient.image}
         alt={patient.name}
         className="h-12 w-12 rounded-full object-cover ring-2 ring-slate-200"
         onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/48?text=P' }}
       />
-      <div className="flex-1">
+      <div className="flex-1 flex flex-col">
         <div className="flex items-center justify-between">
           <h3 className="font-semibold text-slate-900">{patient.name}</h3>
           {patient.status && (
@@ -27,7 +27,17 @@ export default function PatientCard({ patient }) {
           <div className="mt-3 text-sm text-slate-600">
             <div className="flex items-start gap-2">
               <span>🫀</span>
-              <p className="m-0">{patient.summary}</p>
+              <p
+                className="m-0"
+                style={{
+                  display: '-webkit-box',
+                  WebkitLineClamp: 2,
+                  WebkitBoxOrient: 'vertical',
+                  overflow: 'hidden',
+                }}
+              >
+                {patient.summary}
+              </p>
             </div>
           </div>
         )}

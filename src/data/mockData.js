@@ -19,6 +19,21 @@ export const patients = [
     image: '/patients/patient1.svg',
     status: 'Monitoring',
     summary: 'Mild left ventricular hypertrophy',
+    dateOfBirth: '1979-03-15',
+    lastVisit: '2024-12-15',
+    nextAppointment: '2025-02-15',
+    medicalHistory: [
+      'Hypertension diagnosed 2018',
+      'Type 2 Diabetes since 2020',
+      'Previous cardiac episode 2022'
+    ],
+    medications: [
+      'Metformin 500mg twice daily',
+      'Lisinopril 10mg once daily',
+      'Aspirin 81mg daily'
+    ],
+    analysis:
+      'Recent MRI shows early signs of cardiac remodeling. Chamber dimensions within normal limits but wall thickness increased in anteroseptal region. No evidence of ischemia or infarction. Ejection fraction 58%. Recommend continued medication and lifestyle modifications.',
     medicalInfo: {
       bloodType: 'A+',
       allergies: ['Penicillin'],
@@ -66,6 +81,19 @@ export const patients = [
     image: '/patients/patient2.svg',
     status: 'Active',
     summary: 'Bicuspid aortic valve with mild stenosis',
+    dateOfBirth: '1992-07-22',
+    lastVisit: '2024-10-01',
+    nextAppointment: '2025-01-10',
+    medicalHistory: [
+      'Migraine since adolescence',
+      'Occasional palpitations'
+    ],
+    medications: [
+      'Propranolol 20mg PRN',
+      'Ibuprofen 400mg PRN'
+    ],
+    analysis:
+      'Valve shows mild stenosis consistent with bicuspid morphology. No immediate intervention required. Recommend periodic echocardiography and symptom monitoring.',
     medicalInfo: {
       bloodType: 'O-',
       allergies: [],
@@ -102,6 +130,19 @@ export const patients = [
     image: '/patients/patient3.svg',
     status: 'Monitoring',
     summary: 'Acute viral myocarditis',
+    dateOfBirth: '1966-01-10',
+    lastVisit: '2024-11-20',
+    nextAppointment: '2025-03-05',
+    medicalHistory: [
+      'Diabetes Type 2 for 10 years',
+      'Recent viral infection 2024'
+    ],
+    medications: [
+      'Metformin 1000mg daily',
+      'Bisoprolol 5mg daily'
+    ],
+    analysis:
+      'Findings consistent with resolving myocarditis. Recommend reduced activity and cardiology follow-up. Repeat imaging in 3 months.',
     medicalInfo: {
       bloodType: 'B+',
       allergies: ['Latex'],
@@ -138,6 +179,18 @@ export const patients = [
     image: '/patients/patient4.svg',
     status: 'Recovered',
     summary: 'Rule out hypertrophic cardiomyopathy',
+    dateOfBirth: '1983-09-05',
+    lastVisit: '2024-09-18',
+    nextAppointment: '2025-04-01',
+    medicalHistory: [
+      'Family history of HCM (mother)',
+      'Previous palpitations now resolved'
+    ],
+    medications: [
+      'None currently'
+    ],
+    analysis:
+      'No hypertrophic cardiomyopathy detected on recent workup. Continue routine primary care and return if symptoms recur.',
     medicalInfo: {
       bloodType: 'AB+',
       allergies: ['Aspirin'],
@@ -174,6 +227,20 @@ export const patients = [
     image: '/patients/patient5.svg',
     status: 'Critical',
     summary: 'Heart failure, NYHA Class II',
+    dateOfBirth: '1957-11-02',
+    lastVisit: '2024-12-22',
+    nextAppointment: '2025-01-15',
+    medicalHistory: [
+      'Heart failure diagnosed 2022',
+      'Coronary artery disease'
+    ],
+    medications: [
+      'Furosemide 40mg daily',
+      'Atorvastatin 20mg nightly',
+      'Clopidogrel 75mg daily'
+    ],
+    analysis:
+      'Evidence of chronic heart failure with reduced exercise tolerance. Optimize diuretics and consider cardiology consultation for device therapy evaluation.',
     medicalInfo: {
       bloodType: 'A-',
       allergies: [],
@@ -190,6 +257,19 @@ export const patients = [
     image: '/patients/patient6.svg',
     status: 'Monitoring',
     summary: 'Post-MI with stent placement',
+    dateOfBirth: '1966-05-29',
+    lastVisit: '2024-08-30',
+    nextAppointment: '2025-02-20',
+    medicalHistory: [
+      'Myocardial infarction 2023 with stent placement',
+      'Hyperlipidemia'
+    ],
+    medications: [
+      'Ticagrelor 90mg twice daily',
+      'Metoprolol 50mg daily'
+    ],
+    analysis:
+      'Stable post-MI status with good stent patency on recent imaging. Continue dual antiplatelet therapy as prescribed and monitor lipids.',
     medicalInfo: {
       bloodType: 'O+',
       allergies: ['NSAIDs'],
