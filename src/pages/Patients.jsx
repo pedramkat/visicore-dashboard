@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Sidebar from '../components/Sidebar'
 import PatientCard from '../components/PatientCard'
+import CounterStat from '../components/CounterStat'
 import { patients } from '../data/mockData'
 
 export default function Patients() {
@@ -35,10 +36,11 @@ export default function Patients() {
           >
             ☰
           </button>
-          <div>
+          <div className="flex-1">
             <h1 className="text-xl sm:text-2xl font-semibold">Patients</h1>
             <p className="text-slate-500 text-sm mt-0.5">Manage and monitor your patient records</p>
           </div>
+          <CounterStat label="Total Patients" value={filteredPatients.length} icon="👥" />
         </header>
 
         <div className="px-4 sm:px-6 lg:px-8 mt-4">

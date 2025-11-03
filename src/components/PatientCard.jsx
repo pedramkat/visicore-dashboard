@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function PatientCard({ patient }) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-white shadow-sm p-4 flex gap-4 min-h-[9rem]">
+    <div className="rounded-xl border border-slate-200 bg-white shadow-sm p-4 flex gap-4 min-h-[9rem] bg-gradient-to-br from-blue-50 via-sky-50 to-indigo-50">
       <img
         src={patient.image}
         alt={patient.name}

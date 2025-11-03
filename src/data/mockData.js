@@ -68,6 +68,8 @@ export const patients = [
         id: 'rep1',
         date: '2024-01-16',
         title: 'Initial MRI Assessment',
+        type: 'MRI',
+        status: 'Completed',
         content: 'Patient presented with mild headaches. MRI scan shows normal brain structure with no signs of abnormalities.',
         doctor: 'Dr. Sarah Johnson'
       }
@@ -117,6 +119,8 @@ export const patients = [
         id: 'rep2',
         date: '2024-03-11',
         title: 'Migraine Assessment',
+        type: 'MRI',
+        status: 'Reviewed',
         content: 'Patient experiencing chronic migraines. MRI shows minor changes consistent with condition.',
         doctor: 'Dr. Sarah Johnson'
       }
@@ -166,6 +170,8 @@ export const patients = [
         id: 'rep3',
         date: '2024-02-06',
         title: 'Routine Screening',
+        type: 'Screening',
+        status: 'Completed',
         content: 'Routine MRI screening shows age-appropriate changes with no concerning findings.',
         doctor: 'Dr. Sarah Johnson'
       }
@@ -214,6 +220,8 @@ export const patients = [
         id: 'rep4',
         date: '2024-03-26',
         title: 'Preventive Screening',
+        type: 'Preventive',
+        status: 'Completed',
         content: 'Preventive MRI scan shows normal brain structure. Patient is in good health.',
         doctor: 'Dr. Sarah Johnson'
       }

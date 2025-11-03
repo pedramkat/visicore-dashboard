@@ -23,11 +23,10 @@ export default function Sidebar({ open = false, onClose = () => {} }) {
     <>
       {/* Desktop sidebar */}
       <aside className="hidden lg:flex lg:flex-col w-64 shrink-0 border-r border-slate-200 bg-white min-h-screen p-4">
-        <div className="flex items-center gap-3 mb-6">
-          <img src="/images/visicore-128.png" alt="Visicore" className="h-10 w-10" />
-          <div>
-            <div className="font-semibold text-slate-900">Visicore</div>
-            <div className="text-xs text-slate-500">Medical Dashboard</div>
+        <div className="flex flex-col items-center gap-2 mb-6">
+          <img src="/images/visicore-256.png" alt="Visicore" className="h-24 w-24" />
+          <div className="text-center">
+            <div className="text-lg text-slate-500">Medical Dashboard</div>
           </div>
         </div>
 
@@ -82,7 +81,7 @@ export default function Sidebar({ open = false, onClose = () => {} }) {
           aria-modal="true"
         >
           <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center gap-3">
+            <div className="flex flex-col items-center gap-2 mb-6">
               <img src="/images/visicore-128.png" alt="Visicore" className="h-10 w-10" />
               <div>
                 <div className="font-semibold text-slate-900">Visicore</div>
